@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomAlertDialogStyle" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <!-- Customizing the background color -->
+        <item name="colorSurface">@color/dialogBackgroundColor</item>
+        <item name="colorPrimary">@color/positiveButtonColor</item>
+        <item name="colorOnError">@color/negativeButtonColor</item>
+        <!-- Customizing the corner radius -->
+        <item name="shapeAppearanceMediumComponent">@style/CustomShapeAppearance</item>
+    </style>
+
+    <!-- Define a custom shape appearance for the dialog -->
+    <style name="CustomShapeAppearance" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item> <!-- Use your desired corner radius here -->
+    </style>
+
+    <!-- Define colors in colors.xml -->
+     <!-- Your desired background color -->
+
+
+</resources>

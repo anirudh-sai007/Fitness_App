@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveFragment">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_margin="36dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/messageListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/romimage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hr" />
+
+            <TextView
+                android:id="@+id/romvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="ROM"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/heartrate"
+                android:src="@drawable/hr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hrvalue"
+                android:layout_marginStart="8dp"
+                android:text="Heart rate" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/accelometer"
+                android:src="@drawable/hr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/acc"
+                android:layout_marginStart="8dp"
+                android:text="accelometer value" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/walkingimg"
+                android:src="@drawable/walk" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/walkingvalue"
+                android:layout_marginStart="8dp"
+                android:text="M" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+<GridLayout
+android:id="@+id/buttonGrid"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:rowCount="2"
+android:columnCount="2"
+android:layout_alignParentBottom="true"
+android:padding="66dp">
+
+
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:id="@+id/buttona"
+    android:backgroundTint="#04FD3A"
+    android:layout_gravity="center"
+    android:text="Start" />
+
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:id="@+id/buttonb"
+    android:backgroundTint="#73DF78"
+    android:layout_gravity="center"
+    android:text="Stop" />
+
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:id="@+id/buttonc"
+    android:backgroundTint="#D53253"
+    android:layout_gravity="center"
+    android:text="Stop" />
+
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:id="@+id/buttond"
+    android:backgroundTint="#D30A0A"
+    android:layout_gravity="center"
+    android:text="Stop" />
+</GridLayout>
+
+    </RelativeLayout>

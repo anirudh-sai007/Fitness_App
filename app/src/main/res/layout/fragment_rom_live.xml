@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RomLiveFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="20dp">
+
+    <com.goodiebag.protractorview.ProtractorView
+        android:id="@+id/protractorview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:thumb="@drawable/thumb_focused"
+        app:arcColor="#4a4a4a"
+        app:arcProgressColor="#FF0000"
+        app:tickColor="#4a4a4a"
+        app:tickProgressColor="#abe6"
+        app:textColor="#000"
+        app:textProgressColor="#FF0000"
+        app:angleTextSize="10sp"
+        app:arcWidth="4dp"
+        app:progressWidth="4dp"
+        app:tickOffset="18dp"
+        app:tickLength="10dp"
+        app:angle="45"
+        app:tickIntervals="15"
+        app:ticksBetweenLabel="three"
+        app:touchInside="true"
+        app:roundEdges="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/hintTextView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="Range of motion is:"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+        <TextView
+            android:id="@+id/valueTextView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="_____"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_marginBottom="8dp">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/redoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_weight="1"
+        android:text="Redo"
+        android:layout_margin="20dp"
+        android:textSize="15sp"
+        app:backgroundTint="#4ADF97"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveromButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_weight="1"
+        android:text="Save"
+        android:layout_margin="20dp"
+        android:textSize="15sp"
+        app:backgroundTint="#4ADF97"/>
+
+</LinearLayout>
+    </LinearLayout>
+</FrameLayout>

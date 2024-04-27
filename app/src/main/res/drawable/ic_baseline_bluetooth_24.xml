@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:drawable="@color/colorCard1" android:state_pressed="true" />
+    <!-- Focused state -->
+    <item android:drawable="@color/colorCard2" android:state_focused="true" />
+    <!-- Hovered state -->
+    <item android:drawable="@color/colorCard3" android:state_hovered="true" />
+    <!-- Disabled state -->
+    <item android:drawable="@color/colorCard1" android:state_enabled="false" />
+    <!-- Default state -->
+    <item android:drawable="@color/colorCard1" />
+</selector>
